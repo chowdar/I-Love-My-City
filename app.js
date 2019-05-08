@@ -3,7 +3,7 @@ let path = require('path');
 
 let imgs = require('./Models/images');
 
-let mycityRoutes = require('./routes/myCity')
+let mycityRoutes = require('./routes/state/myCity')
 let app = express();
 
 app.set('view engine', 'ejs');
@@ -15,7 +15,7 @@ app.get('/', (req,res) =>{
         images
     })
 })
-app.use('/', mycityRoutes)
+app.use('/state', mycityRoutes)
 
 
 module.exports = app;

@@ -2,11 +2,11 @@ let express = require('express');
 
 let router = express.Router();
 
-let imgs = require('../Models/images');
+let imgs = require('../../Models/images');
 
 router.get('/:city', (req, res) => {
     let city = req.params.city;
-    let cityName, cityTitle;
+    let cityName , cityTitle;
     
     switch(city){
         case 'hyderabad':

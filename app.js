@@ -6,7 +6,7 @@ let imgs = require('./Models/images');
 let mycityRoutes = require('./routes/state/myCity')
 let app = express();
 
-app.set('view engine', 'ejs');
+app.set('view engine', 'pug');
 
 app.get('/', (req,res) =>{
     let images = imgs.city;

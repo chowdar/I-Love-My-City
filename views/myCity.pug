@@ -1,0 +1,16 @@
+extends ./shared/template
+block content
+    br
+    div.container
+        div.row
+            div.col-lg-4
+            h3= cityName
+            div.col-lg-8= cityName
+        br 
+        br
+        h1 Images City
+        hr
+        div.row
+            each img in images
+                div.col-lg-6
+                    img(src= img alt="images" style="width:100%; height: auto")
